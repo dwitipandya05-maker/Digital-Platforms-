@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Platforms — Guest Speaker Series</title>
+  <meta name="description" content="One tab for every guest speaker session: key ideas, a game to practise them, and the slides." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M16 2c1 8 6 13 14 14-8 1-13 6-14 14-1-8-6-13-14-14 8-1 13-6 14-14z' fill='%23262340'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#overview" aria-label="Home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c1 8 6 13 14 14-8 1-13 6-14 14-1-8-6-13-14-14 8-1 13-6 14-14z"/></svg>
+      <span id="brand-name">Digital Platforms</span>
+    </a>
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Sessions"></nav>
+    <span class="term-pill" id="term-pill"></span>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <span id="footer-left"></span>
+    <span class="mono">Built with Claude Code · hosted on Vercel</span>
+  </footer>
+
+  <!-- Data first, then the app -->
+  <script src="data/sessions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

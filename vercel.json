@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/slides/(.*)",
+      "headers": [{ "key": "Content-Disposition", "value": "inline" }]
+    }
+  ]
+}
